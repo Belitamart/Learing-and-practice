@@ -5,7 +5,7 @@
 
 #mainWindow {
     display: block;
-    width: 625px;
+    width: 600px;
     height: 460px;
     position: absolute;
     top: 50%;
@@ -32,7 +32,7 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     border: 1px solid #CDCDCD;
-    width: 600px;
+    width: 575px;
     height: 50px;
     display: block;
     margin-left: auto;
