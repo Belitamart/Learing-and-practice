@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <title>Задание 1 делаем форму по образцу</title>
-        <link rel="stylesheet" type="text/css" href="Styles/Styles.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 1 делаем форму по образцу</title>
+    <link rel="stylesheet" type="text/css" href="Styles/Styles.css">
 
-    <body>
+</head>
 
-            <div id="mainWindow">
+<body>
 
-                <img id="logo" src="Pictures/Label.jpg" alt="Логотип">
+<div class="mainWindow">
 
-                <p id="enterMessage">Войдите, чтобы продолжить</p>
+    <img class="mainWindow__logo" src="Pictures/Label.jpg" alt="Логотип">
 
-                <input class="inputField" type="text" value="e-mail"/><br/>
+    <p class="mainWindow__enterMessage">Войдите, чтобы продолжить</p>
 
-                <input class="inputField" type="text" value="пароль"/>
+    <input class="mainWindow__inputField mainWindow__inputLogin" id="login" name="login" type="text" placeholder="e-mail">
 
-                <label class="container">запомнить
+    <label class="mainWindow_inputLabel" for="login"> login </label>
 
-                    <input type="checkbox" checked="checked">
+    <input class="mainWindow__inputField mainWindow__inputPassword" id="password" name="password" type="password" placeholder="пароль"/>
 
-                    <span class="checkmark"></span>
+    <label class="mainWindow_inputLabel" for="password"> login </label>
 
-                </label>
+    <div class="mainWindow_checkEnter">
 
-                <button id="enterButton">Войти</button>
+        <label class="customCheckbox">запомнить
 
-            </div>
-    </body>
+            <input class="customCheckbox__inputCheckbox" type="checkbox" checked="checked">
+
+            <span class="customCheckbox__checkmark"></span>
+
+        </label>
+
+    </div>
+
+    <button class="mainWindow__enterButton">Войти</button>
+
+</div>
+</body>
 </html>
